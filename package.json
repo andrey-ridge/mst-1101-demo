@@ -1,0 +1,21 @@
+{
+	"private": true,
+	"name": "mst-es6-map-demo",
+	"version": "1.0.0",
+	"scripts": {
+		"build": "npm run build-es5; npm run build-es6",
+		"build-es5": "cd package && webpack --mode=development --env.ES_VER=5 --output-path=../dist/es5",
+		"build-es6": "cd package && webpack --mode=development --env.ES_VER=6 --output-path=../dist/es6",
+		"test": "npm run test-es5; npm run test-es6",
+		"test-es5": "node dist/es5/main.js",
+		"test-es6": "node dist/es6/main.js"
+	},
+	"devDependencies": {
+		"chalk": "^3.0.0",
+		"mobx": "^5.15.0",
+		"mobx-state-tree": "^3.15.0",
+		"webpack": "^4.41.2",
+		"webpack-cli": "^3.3.10"
+	},
+	"dependencies": {}
+}
