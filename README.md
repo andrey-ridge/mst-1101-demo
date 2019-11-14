@@ -8,4 +8,8 @@ Note that `webpack.config.js` sets alias for `mobx` package in ES6 mode to `mobx
 
 ## Running tests
 
-Use `npm install`, `npm run build` and `npm test` to see results.
+```bash
+npm install
+npm run build
+npm test
+```
